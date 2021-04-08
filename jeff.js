@@ -1,3 +1,7 @@
 
 
-var logo = document.getElementById("clap");
+var forButton = document.getElementById(fourth);
+
+function getForm(){
+    console.log("hello")
+}
