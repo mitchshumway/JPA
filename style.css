@@ -1,4 +1,4 @@
-/*#webpage*/body{
+/*#webpage*/body {
     height: 300vh;
     width: 100vw;
     background-color: darkgrey;
@@ -28,6 +28,7 @@
 
 .button-div {
     max-width: 100px;
+    /*position:fixed;*/
 }
 
 .text{
@@ -98,3 +99,11 @@ h1 {
     width:25%;
     position: relative;
 }
+
+/*.button-div{
+    display:none;
+}
+
+#buttons:hover .button-div{
+    display:block;
+}*/
