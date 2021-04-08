@@ -76,6 +76,7 @@ body {
     color: black;
     top:100vh;
     background-color: slategray;
+    border-radius: 25px;
 }
 
 #bio h1{
@@ -99,6 +100,7 @@ body {
     top: 100vh;
     color: darkblue;
     background-color: slategray;
+    border-radius: 25px;
 }
 
 .bioP{
