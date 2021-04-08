@@ -1,0 +1,100 @@
+#webpage{
+    height: 300vh;
+    width: 100vw;
+    background-color: darkgrey;
+}
+
+#buttons{  
+    width: 15%;
+    max-width: 100px;
+    height: auto;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+.button {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    max-width: 100px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-div {
+    max-width: 100px;
+}
+
+.text{
+    position: relative;
+    width: 100%;
+    color:orangered;
+    text-align:center;
+    z-index: 2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    /*display: inline-block;
+    vertical-align: middle;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homeVideo{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+    max-height: 100vh;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#bio{
+    height: 100vh;
+    width: 85%;
+    position: relative;
+    left: 10%;
+    z-index: 0;
+    color: orange;
+    top:100vh;
+    background-color: slategray;
+}
+
+#videos{
+    height: 100vh;
+    position: relative;
+    left: 10%;
+    width: 85%;
+    z-index: 0;
+    top: 100vh;
+    color: darkblue;
+    background-color: slategray;
+}
+
+.bioP{
+    float:left;
+    padding-left: 5%;
+    left:11%;
+    width:300px;
+}
+
+h1 {
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+#profile{
+    float:inline-end;
+    top: 0;
+    left: 5%;
+    width:25%;
+    position: relative;
+}
