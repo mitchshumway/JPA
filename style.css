@@ -1,4 +1,11 @@
-/*#webpage*/body {
+/* TO DO: 
+1) make pages fade in/fade out on scroll;
+2) make buttons fade in/fade out on hover 
+and move to outer layer or start at 100vh;
+3) finalize aethetic;
+4) mobile optimization*/
+
+body {
     height: 300vh;
     width: 100vw;
     /*background-color: darkgrey;*/
@@ -45,6 +52,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow:scroll;
 }
 
 #homeVideo{
@@ -65,7 +73,7 @@
     position: relative;
     left: 10%;
     z-index: 0;
-    color: rebeccapurple;
+    color: black;
     top:100vh;
     background-color: slategray;
 }
@@ -73,7 +81,7 @@
 #bio h1{
     z-index: 1;
     width: fit-content;
-    background-color: lightgoldenrodyellow;
+    /*background-color: lightgoldenrodyellow;*/
     position: relative;
     top: 13%;
     left: 27%;
@@ -102,7 +110,7 @@
     top: 10%;
     left:20%;
     width:300px;
-    background-color: lightgoldenrodyellow;
+    /*background-color: lightgoldenrodyellow;*/
 }
 
 /*h1 {
@@ -123,6 +131,10 @@
     z-index: 100;
     border-color: white;
     border-width: thick;
+}
+
+.fade{
+    opacity: 1;
 }
 
 /*.button-div{
