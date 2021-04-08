@@ -70,6 +70,18 @@
     background-color: slategray;
 }
 
+#bio h1{
+    z-index: 1;
+    width: fit-content;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    top: 3%;
+    left: 8%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 0%;
+}
+
 #videos{
     height: 100vh;
     position: relative;
@@ -82,10 +94,14 @@
 }
 
 .bioP{
+    position:relative;
     float:left;
-    padding-left: 5%;
-    left:11%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    left:2%;
     width:300px;
+    background-color: lightgoldenrodyellow;
 }
 
 h1 {
@@ -99,6 +115,13 @@ h1 {
     left: 5%;
     width:25%;
     position: relative;
+}
+
+#firstVid{
+    position: relative;
+    z-index: 100;
+    border-color: white;
+    border-width: thick;
 }
 
 /*.button-div{
