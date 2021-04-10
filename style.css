@@ -37,6 +37,8 @@ body {
 
     iframe {
     /* optional */
+    margin-top: .5%;
+    padding: .5%;
     width: /*100vw;*/85%;
     height: /*100vw;*/85%;
     }
