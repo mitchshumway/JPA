@@ -50,5 +50,5 @@ $(window).on("load", function() {
 //makes buttons start under video
 //needs to be adapted for other devices/aspect ratios
 $(window).scroll(function(){
-  $("#buttons").css("top",Math.max(0,800-$(this).scrollTop()));
+  $("#buttons").css("top",Math.max(0,830-$(this).scrollTop()));
 });
