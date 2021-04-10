@@ -2,10 +2,12 @@
 
 var forButton = document.getElementById(fourth);
 
+//eventually needs to trigger contact form
 function getForm(){
     console.log("hello")
 }
 
+//makes sections fade in/fade out
 $(window).on("load", function() {
     function fade(pageLoad) {
       var windowTop = $(window).scrollTop(),
@@ -45,7 +47,8 @@ $(window).on("load", function() {
   });
 
 
-//needs work: attempt to make buttons start at location
+//makes buttons start under video
+//needs to be adapted for other devices/aspect ratios
 $(window).scroll(function(){
   $("#buttons").css("top",Math.max(0,800-$(this).scrollTop()));
 });

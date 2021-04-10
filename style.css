@@ -1,4 +1,5 @@
 /* TO DO: 
+Background video: https://howtogetonline.com/how-to-embed-a-hero-background-video.php
 1) make pages fade in/fade out on scroll;
 2) (done) make buttons fade in/fade out on hover 
 and move to outer layer or (start at 100vh)(done);
@@ -21,9 +22,14 @@ body {
     position: fixed;
     overflow: hidden;
     z-index: 1;
-    padding: 20px;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-right: .5%;
+    padding-left: .5%;
+    margin-top: .5%;
     /*padding-right: 20px;*/
-    background-color: black;
+    background-color: slategray;
+    /*background-image: url(images/background4.jpeg);*/
     opacity: 60%;
     border-radius: 25px;
 }
@@ -37,18 +43,23 @@ body {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-start;
 }
 
 .button-div {
-    padding-top: 20%;
-    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     position: relative; /*ABSOLUTE?*/
     min-height: start;
     /*max-width: 100px;*/
     /*border-style: solid;
     border-color: black;*/
-    background-color: gray;
+    /*background-color: gray;*/
+    background-image: url(images/trippybackground1.jpg);
     border-radius: 25px;
     /*display:grid;*/
     /*position:fixed;*/
