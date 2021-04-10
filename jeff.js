@@ -43,3 +43,9 @@ $(window).on("load", function() {
       fade(false);
     }); //fade elements on scroll
   });
+
+
+//needs work: attempt to make buttons start at location
+$(window).scroll(function(){
+  $("#buttons").css("top",Math.max(0,800-$(this).scrollTop()));
+});

@@ -1,29 +1,35 @@
 /* TO DO: 
 1) make pages fade in/fade out on scroll;
-2) make buttons fade in/fade out on hover 
-and move to outer layer or start at 100vh;
-3) finalize aethetic;
-4) mobile optimization*/
+2) (done) make buttons fade in/fade out on hover 
+and move to outer layer or (start at 100vh)(done);
+3) organize video divs;
+4) get rid of empty space at bottom;
+5) finalize aethetic;
+6) mobile optimization*/
 
 body {
     height: 300vh;
     width: 100vw;
     /*background-color: darkgrey;*/
-    background-image: url(images/background1.jpeg);
+    background-image: url(images/trippybackground2.jpg);
+    background-color: black;
 }
 
 #buttons{  
     width: 15%;
     max-width: 100px;
-    height: auto;
     position: fixed;
     overflow: hidden;
     z-index: 1;
-    padding-left: 20px;
+    padding: 20px;
+    /*padding-right: 20px;*/
+    background-color: black;
+    opacity: 60%;
+    border-radius: 25px;
 }
 
 .button {
-    position: relative;
+    position: sticky;
     z-index: 0;
     width: 100%;
     max-width: 100px;
@@ -31,12 +37,25 @@ body {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .button-div {
-    max-width: 100px;
+    padding-top: 20%;
+    margin-top: 10%;
+    position: relative; /*ABSOLUTE?*/
+    min-height: start;
+    /*max-width: 100px;*/
+    /*border-style: solid;
+    border-color: black;*/
+    background-color: gray;
+    border-radius: 25px;
+    /*display:grid;*/
     /*position:fixed;*/
+}
+
+#first{
+    grid-row: 1;
 }
 
 .text{
@@ -71,7 +90,7 @@ body {
     height: 100vh;
     width: 85%;
     position: relative;
-    left: 10%;
+    left: 11%;
     z-index: 0;
     color: black;
     top:100vh;
@@ -94,13 +113,23 @@ body {
 #videos{
     height: 100vh;
     position: relative;
-    left: 10%;
+    left: 11%;
     width: 85%;
     z-index: 0;
     top: 100vh;
     color: darkblue;
     background-color: slategray;
     border-radius: 25px;
+    /*experiment
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2% 2%;
+    margin: 2%;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";*/
 }
 
 .bioP{
@@ -128,11 +157,101 @@ body {
     position: relative;
 }
 
+#videoBlock{
+    /*padding-left: 5%;*/
+    position: absolute;
+    height: fit-content;
+    bottom: 100vh;
+    /*display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2% 2%;
+    margin: 2%;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";*/
+}
+
+.video{
+    /*padding: 50px;*/
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
+
 #firstVid{
+    /*grid-column: 1 / 3;
+    grid-row: 1 / 1;*/
+    width: 300px;
+    height: 225px;
+    margin: 2%;
+    /*width: 300px;
+    height: 225px;*/
+    /*grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+    z-index: 100;*/
+    
+    /*float:left;
     position: relative;
     z-index: 100;
-    border-color: white;
-    border-width: thick;
+    left: 5%;
+    background-color: white;
+    width: 300px;
+    height: 225px;*/
+}
+
+#secondVid{
+    float:inline-end;
+    position:relative;
+   /* grid-column: 3 / 5;
+    grid-row: 1 / 1;*/
+    width: 300px;
+    height: 225px;
+    margin: 2%;
+    left: 27%;
+    top: -259px;
+    /*float:inline-end;
+    width: 300px;
+    height: 225px;
+    position: relative;
+    z-index: 100px;
+    background-color: white;*/
+}
+
+#thirdVid{
+    position: relative;
+    width: 475px;
+    height: 350px;
+    margin: 2%;
+    top: -250px;
+}
+
+#fourthVid{
+    position: relative;
+    width: 320px;
+    height: 225px;
+    left: 43%;
+    top: -550px;
+}
+
+#fifthVid{
+    position: relative;
+    width: 400px;
+    height: 275px;
+    left: 56%;
+    top: -1100px;
+}
+
+#sixthVid{
+    position: relative;
+    width: 320px;
+    height: 225px;
+    left: 71%;
+    top: -1000px;
 }
 
 .fade{
