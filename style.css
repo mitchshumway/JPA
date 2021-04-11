@@ -32,11 +32,11 @@ body {
     align-items: center;
     }
 
-    #hero {
+#hero {
     position: relative;
     }
 
-    iframe {
+iframe {
     /* optional */
     margin-top: .5%;
     padding: .5%;
@@ -103,7 +103,7 @@ body {
     color:black;
     text-align:center;
     z-index: 2;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:/*Verdana, Geneva, Tahoma,*/ sans-serif;
     font-weight: bolder;
     /*display: inline-block;
     vertical-align: middle;*/
@@ -180,6 +180,9 @@ body {
     top: 10%;
     left:20%;
     width:300px;
+    font-family: sans-serif;
+    text-indent: 10%;
+    line-height: 2%px;
     /*background-color: lightgoldenrodyellow;*/
 }
 
@@ -199,7 +202,7 @@ body {
 #video-block{
     /*padding-left: 5%;*/
     position: relative;
-    height: 105vh;
+    height: 100vh;
     /*display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -209,6 +212,25 @@ body {
     ". . ."
     ". . ."
     ". . .";*/
+}
+
+#site-credit{
+    height: 10vh;
+    width: 85%;
+    position: relative;
+    left: 11%;
+    z-index: 0;
+    color: black;
+    top:100vh;
+    background-color: slategray;
+    opacity: 50%;
+    border-radius: 25px;
+}
+
+#credit-text{
+    position: relative;
+    top: 50%;
+    left: 45%;
 }
 
 .video{
