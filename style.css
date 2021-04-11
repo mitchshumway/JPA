@@ -16,6 +16,7 @@ body {
     /*background-color: darkgrey;*/
     background-image: url(images/trippybackground2.jpg);
     background-color: black;
+    margin-bottom: 5%;
 }
 
 .videoContainer {
