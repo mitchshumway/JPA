@@ -8,6 +8,7 @@ function getForm(){
 }
 
 //makes sections fade in/fade out
+//http://jsfiddle.net/eLwex993/5/
 $(window).on("load", function() {
     function fade(pageLoad) {
       var windowTop = $(window).scrollTop(),
